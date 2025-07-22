@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <nav class="absolute top-0 left-0 w-full z-20">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="text-black text-2xl md:text-3xl font-extrabold tracking-wide">Elysium</a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-8 text-black font-medium text-base text-lg">
+        <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-400 transition">About</a></li>
+        <li><a href="destinations.html" class="hover:text-blue-400 transition">Destinations</a></li>
+        <li><a href="destdet.html" class="hover:text-blue-400 transition">Details</a></li>
+        <li><a href="book.html" class="hover:text-blue-400 transition">Book</a></li>
+        <li><a href="contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+        <li><a href="tips.html" class="hover:text-green-800 transition">Tips</a></li>
+      </ul>
+
+      <!-- Right Controls -->
+      <div class="hidden md:flex items-center gap-4">
+        <span class="text-black text-sm uppercase">ENG | UA</span>
+        <a href="destinations.html" class="bg-white text-black px-4 py-2 rounded-full font-semibold text-lg hover:bg-blue-400 transition">
+          View Tours <span class="ml-1">➜</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-black focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+      <ul class="flex flex-col space-y-4 text-blck text-base">
+        <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="destinations.html" class="hover:text-blue-400 transition">Destinations</a></li>
+        <li><a href="destdet.html" class="hover:text-blue-400 transition">Details</a></li>
+        <li><a href="book.html" class="hover:text-blue-400 transition">Book</a></li>
+        
+        <li>
+          <a href="#" class="inline-block mt-2 bg-white text-black px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-200">
+            View Tours ➜
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  
+<section class="relative text-gray-800 min-h-[20vh] flex items-center justify-center bg-white">
+  <div class="text-center">
+    <h1 class="text-[5rem] sm:text-[6rem] font-extrabold text-gray-300 opacity-80 leading-none select-none tracking-tight">
+      CONTACT US
+    </h1>
+  </div>
+</section>
+
+
+<section class="bg-gray-100 text-gray-700 body-font">
+  <div class="container mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+    
+    <div class="md:col-span-2 relative rounded-lg overflow-hidden shadow-lg">
+      <iframe
+        class="absolute inset-0 w-full h-full"
+        frameborder="0"
+        title="Map"
+        src="https://maps.google.com/maps?q=Izmir&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        style="filter: grayscale(1) contrast(1.2) opacity(0.6);">
+      </iframe>
+      <div class="relative p-6 bg-white bg-opacity-90 rounded-md m-4 shadow-md">
+        <h3 class="text-lg font-semibold mb-2">Our Office</h3>
+        <p class="text-sm">KLLG St, No.99, Piku City, ID 28289</p>
+        <p class="text-sm">📧 <a href="mailto:Elysium@gmail.com" class="text-indigo-600">Elysium@gmail.com</a></p>
+        <p class="text-sm">📞 +0761-8523-398</p>
+      </div>
+    </div>
+
+    
+    <div class="bg-white rounded-lg p-6 shadow-xl flex flex-col justify-between space-y-6">
+      <div>
+        <h2 class="text-xl font-bold text-gray-800 mb-4">Send Us a Message</h2>
+        <form class="space-y-4">
+          <input type="text" placeholder="Your Name" class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          <input type="email" placeholder="Your Email" class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          <textarea rows="3" placeholder="Message" class="w-full border border-gray-300 rounded-md px-4 py-2 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+          <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-md font-semibold transition duration-300">
+            Send Message
+          </button>
+        </form>
+      </div>
+
+     
+      <div>
+        <h3 class="text-sm font-semibold mb-2">Subscribe to our Newsletter</h3>
+        <div class="flex">
+          <input type="email" placeholder="Enter email"
+            class="flex-grow border border-gray-300 px-3 py-2 rounded-l-md text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+          <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-r-md text-sm transition">
+            Subscribe
+          </button>
+        </div>
+      </div>
+
+      
+      <div class="flex items-center space-x-4 mt-4">
+        <a href="#" class="text-gray-600 hover:text-indigo-600">
+          <img width="20" src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="Facebook" />
+        </a>
+        <a href="#" class="text-gray-600 hover:text-indigo-600">
+          <img width="20" src="https://img.icons8.com/ios-filled/50/twitter.png" alt="Twitter" />
+        </a>
+        <a href="#" class="text-gray-600 hover:text-indigo-600">
+          <img width="20" src="https://img.icons8.com/ios-filled/50/instagram-new.png" alt="Instagram" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <footer class="text-gray-700 body-font bg-gray-50">
+    <div class="container px-5 py-20 mx-auto flex md:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <!-- Logo and About -->
+      <div class="w-64 flex-shrink-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-bold items-center md:justify-start justify-center text-gray-900 hover:text-indigo-600 transition-colors">
+          <img width="48" height="48" src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/external-travel-agency-kindness-and-hospitality-inipagistudio-mixed-inipagistudio.png" alt="Travel Icon" />
+          <span class="ml-3 text-2xl">Elysium</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">
+          Explore the world’s hidden treasures—crafted just for you.
+        </p>
+      </div>
+
+      <!-- Links Sections -->
+      <div class="flex-grow flex flex-wrap md:pl-20 mt-10 md:mt-0 text-center md:text-left">
+        <!-- Quick Links -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-6">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-sm mb-3">Quick Links</h2>
+          <nav class="list-none space-y-2">
+            <li><a href="index.html" class="text-gray-600 hover:text-indigo-600">Home</a></li>
+            <li><a href="destdet.html" class="text-gray-600 hover:text-indigo-600">Packages</a></li>
+            <li><a href="about.html" class="text-gray-600 hover:text-indigo-600">About Us</a></li>
+            <li><a href="contact.html" class="text-gray-600 hover:text-indigo-600">Contact</a></li>
+            <li><a href="book.html" class="text-gray-600 hover:text-indigo-600">Plan Your Trip</a></li>
+            <li><a href="faqs.html" class="text-gray-600 hover:text-indigo-600">FAQ</a></li>
+          </nav>
+        </div>
+
+        <!-- Destinations -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-6">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-sm mb-3">Destinations</h2>
+          <nav class="list-none space-y-2">
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Luxury Travel</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Beach Getaways</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Family Vacations</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Adventure Escapes</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Cultural Cities</a></li>
+          </nav>
+        </div>
+
+        <!-- Support -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-6">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-sm mb-3">Support</h2>
+          <nav class="list-none space-y-2">
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Help Center</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Accessibility</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Anti-Discrimination</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Cancellation Options</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">FAQs</a></li>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-sm text-gray-500 text-center sm:text-left">
+          © 2025 Elysium Travel Agency —
+          <a href="#" class="text-gray-600 hover:text-indigo-600 ml-1" target="_blank">@elysium_travel</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start space-x-4">
+          <a href="#" class="text-gray-500 hover:text-indigo-600">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-indigo-600">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 8v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-indigo-600">
+            <svg fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-indigo-600">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+</section>
+
+
+
+</body>
+</html>

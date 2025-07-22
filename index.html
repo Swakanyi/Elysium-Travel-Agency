@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elysium Travel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+<section class="relative w-full h-screen bg-cover bg-center" style="background-image: url('sara-dubler-Koei_7yYtIo-unsplash.jpg');">
+  
+  <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+  
+  <nav class="absolute top-0 left-0 w-full z-20">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      
+      <a href="index.html" class="text-white text-2xl md:text-3xl font-extrabold tracking-wide">Elysium</a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-8 text-white font-medium text-base text-lg">
+        <li><a href="index.html" class="hover:text-green-800 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-green-800 transition">About</a></li>
+        <li><a href="destinations.html" class="hover:text-green-800 transition">Destinations</a></li>
+        <li><a href="destdet.html" class="hover:text-green-800 transition">Details</a></li>
+        <li><a href="book.html" class="hover:text-green-800 transition">Book</a></li>
+        <li><a href="contact.html" class="hover:text-green-800 transition">Contact</a></li>
+        <li><a href="tips.html" class="hover:text-green-800 transition">Tips</a></li>
+      </ul>
+
+      <!-- Right Controls -->
+      <div class="hidden md:flex items-center gap-4">
+        <span class="text-white text-sm uppercase">ENG | UA</span>
+        <a href="destinations.html" class="bg-white text-black px-4 py-2 rounded-full font-semibold text-lg hover:bg-green-800 transition">
+          View Tours <span class="ml-1">➜</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+      <ul class="flex flex-col space-y-4 text-white text-base">
+        <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="destinations.html" class="hover:text-blue-400 transition">Destinations</a></li>
+        <li><a href="destdet.html" class="hover:text-blue-400 transition">Details</a></li>
+        <li><a href="book.html" class="hover:text-blue-400 transition">Book</a></li>
+        
+        <li>
+          <a href="destinations.html" class="inline-block mt-2 bg-white text-black px-4 py-2 rounded-full text-lg font-semibold hover:bg-gray-200">
+            View Tours ➜
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Content -->
+  <div class="relative z-10 flex flex-col items-center justify-center h-full px-6 text-white text-center">
+    <h1 class="text-[4rem] md:text-[10rem] font-extrabold leading-none">ELYSIUM</h1>
+    <p class="text-xl md:text-2xl mb-8 uppercase tracking-widest">Where adventure begins and never ends</p>
+
+    <div class="text-center">
+      <p class="text-3xl md:text-4xl font-semibold">Traveling<br><span class="italic font-script text-5xl">Beyond</span></p>
+      <a href="book.html" class="inline-block mt-6 px-6 py-3 border border-white rounded-full text-lg hover:bg-white hover:text-black transition">
+        Book now →
+      </a>
+    </div>
+  </div>
+</section>
+
+  <br><br>
+
+   <section class=" mx-auto">
+    <div class="flex justify-center">
+  <h2 class="text-3xl md:text-5xl font-semibold text-center text-gray-900 mb-6 leading-tight">
+    Top Rated Destinations for Your Next Adventure
+  </h2>
+</div>
+
+
+
+    <section class="text-gray-600 body-font">
+  <div class="container px-5 py-2 mx-auto">
+    
+    <div class="flex flex-wrap -m-4">
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <img class="h-60 rounded w-full object-cover object-center mb-6" src="ama.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xl font-semibold title-font">Amalfi Dream | Italy</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">7 days | from <strong>$4200</strong> / per person</h2>
+          <p class="italic text-sm text-gray-600">✨ Walks along the coast, dinner overlooking the sea, hotels with history and soulfulness.</p>
+          <ul>
+          <li>🌟 Accommodation in boutique hotels</li>
+          <li>🌟 Wine tours and gastronomy</li>
+          <li>🌟 Rent a convertible for a trip along the coast</li>
+        </ul>
+        <button class="mt-4 px-5 py-2 border border-gray-900 rounded-full text-sm hover:bg-gray-900 hover:text-white transition">Read more →</button>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-60 rounded w-full object-cover object-center mb-6" src="mald.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xl font-semibold title-font">Island Hideaway | Maldives</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">7 days | from <strong>$6900</strong> / per person</h2>
+          <p class="italic text-sm text-gray-600">✨  Ideal for a romantic escape or honeymoon.</p>
+       
+        <ul class="mt-3 space-y-1 text-sm text-gray-700">
+          <li>🌟 Villa on the water with a private pool</li>
+          <li>🌟 Dinners on the sand, snorkeling with manta rays</li>
+          <li>🌟 Personal butler and seaplane transfer</li>
+        </ul>
+        <button class="mt-4 px-5 py-2 border border-gray-900 rounded-full text-sm hover:bg-gray-900 hover:text-white transition">Read more →</button>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-60 rounded w-full object-cover object-center mb-6" src="nor.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xl font-semibold title-font">Fjord Serenity | Norway</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">6 days | from <strong>$4500</strong> / per person</h2>
+          <p class="italic text-sm text-gray-600">✨  Fresh air and the silence of the fjords and the fireplace.</p>
+        
+        <ul class="mt-3 space-y-1 text-sm text-gray-700">
+          <li>🌟 Hotels with fjord views</li>
+          <li>🌟 Boat and kayak trips</li>
+          <li>🌟 Northern lights, spa and local cuisine</li>
+        </ul>
+        <button class="mt-4 px-5 py-2 border border-gray-900 rounded-full text-sm hover:bg-gray-900 hover:text-white transition">Read more →</button>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-60 rounded w-full object-cover object-center mb-6" src="uae.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xl font-semibold title-font">Desert Luxury | UAE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">5 days | from <strong>$5100</strong> / per person</h2>
+          <p class="italic text-sm text-gray-600">✨  Private villa in the middle of the desert, Rolls-Ryoce safaris and dinners under the stars.</p>
+        
+        <ul class="mt-3 space-y-1 text-sm text-gray-700">
+          <li>🌟Accomodation at Al Mahab Hotel</li>
+          <li>🌟 24/7 service</li>
+          <li>🌟 Spa, helicopter tours</li>
+        </ul>
+        <button class="mt-4 px-5 py-2 border border-gray-900 rounded-full text-sm hover:bg-gray-900 hover:text-white transition">Read more →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</section>
+
+<!-- why choose us -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    
+    <div class="text-center mb-16">
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6 leading-tight">
+        Your Trusted Travel Partner
+      </h1>
+      <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        At Elysium, we make your travel dreams a reality with personalized services, 
+        unbeatable prices, and unforgettable experiences.
+      </p>
+    </div>
+
+   
+    <div class="grid lg:grid-cols-3 gap-6 auto-rows-fr">
+      
+      <div class="space-y-8">
+        
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-white/20">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Expertly Curated Packages</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Carefully designed itineraries tailored to your preferences.
+          </p>
+        </div>
+
+        
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-white/20">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">24/7 Customer Support</h3>
+          <p class="text-gray-600 leading-relaxed">
+            We're here to assist you every step of the journey.
+          </p>
+        </div>
+      </div>
+
+      
+      <div class="flex items-center justify-center">
+        <img src="cust.jpg" alt="Main Travel" class="rounded-2xl w-full object-cover h-full max-h-[600px] shadow-lg">
+      </div>
+
+      
+      <div class="space-y-8">
+        
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-white/20">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Hassle-Free Booking</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Easy and secure booking process, giving you peace of mind.
+          </p>
+        </div>
+
+        
+        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-white/20">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Travel Insurance Included</h3>
+          <p class="text-gray-600 leading-relaxed">
+            We prioritize your safety with comprehensive coverage.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Testimonials Grid -->
+
+    <section class="bg-gray-100 py-16">
+  <div class="container mx-auto px-4">
+    <
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">What Our Travelers Say</h2>
+      <p class="text-gray-600 max-w-xl mx-auto text-sm md:text-base">
+        From breathtaking beaches to mountain adventures, hear how our clients made unforgettable memories with us.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="bg-white p-6 shadow-lg rounded-lg text-center">
+        <img class="w-20 h-20 mb-4 rounded-full mx-auto border-2 border-gray-200 object-cover" src="test2.webp" alt="Emma T">
+        <div class="flex justify-center mb-2">
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+        </div>
+        <p class="text-lg leading-relaxed">Our Maldives trip was a magical escape. Beautiful beaches, great activities and seamless planning made it unforgettable!</p>
+        <div class="mt-4">
+          <span class="block h-1 w-10 bg-indigo-500 mx-auto rounded mb-2"></span>
+          <h2 class="text-gray-900 font-semibold text-lg">EMMA T</h2>
+          <p class="text-black text-lg">Adventure Enthusiast, London</p>
+        </div>
+      </div>
+
+      
+      <div class="bg-white p-6 shadow-lg rounded-lg text-center">
+        <img class="w-20 h-20 mb-4 rounded-full mx-auto border-2 border-gray-200 object-cover" src="test3.webp" alt="Alper Kamu">
+        <div class="flex justify-center mb-2">
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+        </div>
+        <p class="text-lg leading-relaxed">Luxury safaris, dinners under the stars. It wasn't just a holiday—it was a Forbes-level experience.</p>
+        <div class="mt-4">
+          <span class="block h-1 w-10 bg-indigo-500 mx-auto rounded mb-2"></span>
+          <h2 class="text-gray-900 font-semibold text-lg">ALPER KAMU</h2>
+          <p class="text-black text-lg">Adventure Enthusiast</p>
+        </div>
+      </div>
+
+      
+      <div class="bg-white p-6 shadow-lg rounded-lg text-center">
+        <img class="w-20 h-20 mb-4 rounded-full mx-auto border-2 border-gray-200 object-cover" src="test4.jpg" alt="Henry Liam">
+        <div class="flex justify-center mb-2">
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+        </div>
+        <p class="text-lg leading-relaxed">Santorini's charm captivated us! Iconic sunsets and cozy accommodations made it pure bliss.</p>
+        <div class="mt-4">
+          <span class="block h-1 w-10 bg-indigo-500 mx-auto rounded mb-2"></span>
+          <h2 class="text-gray-900 font-semibold text-lg">HENRY LIAM</h2>
+          <p class="text-black text-lg">Travel Consultant</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 shadow-lg rounded-lg text-center">
+        <img class="w-20 h-20 mb-4 rounded-full mx-auto border-2 border-gray-200 object-cover" src="test6.jpg" alt="Henry Liam">
+        <div class="flex justify-center mb-2">
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+        </div>
+        <p class="text-lg leading-relaxed">The Swiss Alps Adventure exceeded expextations. Stunning scenery, well-organized itenerary and a fantastic experience for the whole family.</p>
+        <div class="mt-4">
+          <span class="block h-1 w-10 bg-indigo-500 mx-auto rounded mb-2"></span>
+          <h2 class="text-gray-900 font-semibold text-lg">James H
+          <p class="text-black text-lg">Group Traveler</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 shadow-lg rounded-lg text-center">
+        <img class="w-20 h-20 mb-4 rounded-full mx-auto border-2 border-gray-200 object-cover" src="test5.jpg" alt="Henry Liam">
+        <div class="flex justify-center mb-2">
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+        </div>
+        <p class="text-lg leading-relaxed">Fantastic service, seamless travel and unforgettable family adventure!</p>
+        <div class="mt-4">
+          <span class="block h-1 w-10 bg-indigo-500 mx-auto rounded mb-2"></span>
+          <h2 class="text-gray-900 font-semibold text-lg">Anna P</h2>
+          <p class="text-black text-lg">Family Traveler</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 shadow-lg rounded-lg text-center">
+        <img class="w-20 h-20 mb-4 rounded-full mx-auto border-2 border-gray-200 object-cover" src="beach.jpg" alt="Baech">
+        <div class="flex justify-center mb-2">
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+          <img width="20" src="https://img.icons8.com/color/96/filled-star--v1.png" />
+        </div>
+        <p class="text-lg leading-relaxed">The beach trip was nothing short of magical. Every moment felt like a dream. I can't wait to book our next escape! </p>
+        <div class="mt-4">
+          <span class="block h-1 w-10 bg-indigo-500 mx-auto rounded mb-2"></span>
+          <h2 class="text-gray-900 font-semibold text-lg">Sarah Jones</h2>
+          <p class="text-black text-lg">Family Traveler</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </section>
+ <!-- NEWSLETTER SIGN-UP -->
+  <section class="relative mt-8 px-4 py-24 bg-cover bg-center bg-no-repeat" style="background-image: url('mtn.jpg');">
+  
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+ 
+  <div class="relative z-10 text-center max-w-2xl mx-auto text-white">
+   
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">
+      START YOUR ADVENTURE
+    </h1>
+
+    
+    <p class="text-base md:text-lg mb-2 leading-relaxed max-w-xl mx-auto">
+      Sign up for our newsletter and receive exclusive travel deals, insider tips, and destination
+    </p>
+    <p class="text-base md:text-lg mb-8 leading-relaxed max-w-xl mx-auto">
+      inspiration. Don't miss out on the adventure – join our mailing list today!
+    </p>
+
+    
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-md mx-auto">
+      <input 
+        type="email" 
+        placeholder="Enter your email address..." 
+        class="flex-1 w-full sm:w-auto px-4 py-3 rounded-lg border border-gray-300 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent text-sm"
+      />
+      <button 
+        class="w-full sm:w-auto px-8 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-colors duration-200 text-sm">
+        Subscribe
+      </button>
+    </div>
+  </div>
+</section>
+
+</section>
+
+<!-- FOOTER -->
+ <section>
+  <footer class="text-gray-700 body-font bg-gray-50">
+    <div class="container px-5 py-20 mx-auto flex md:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      
+      <div class="w-64 flex-shrink-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-bold items-center md:justify-start justify-center text-gray-900 hover:text-indigo-600 transition-colors">
+          <img width="48" height="48" src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/external-travel-agency-kindness-and-hospitality-inipagistudio-mixed-inipagistudio.png" alt="Travel Icon" />
+          <span class="ml-3 text-2xl">Elysium</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">
+          Explore the world’s hidden treasures—crafted just for you.
+        </p>
+      </div>
+
+      <!-- Links Sections -->
+      <div class="flex-grow flex flex-wrap md:pl-20 mt-10 md:mt-0 text-center md:text-left">
+        <!-- Quick Links -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-6">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-sm mb-3">Quick Links</h2>
+          <nav class="list-none space-y-2">
+            <li><a href="index.html" class="text-gray-600 hover:text-indigo-600">Home</a></li>
+            <li><a href="destdet.html" class="text-gray-600 hover:text-indigo-600">Packages</a></li>
+            <li><a href="about.html" class="text-gray-600 hover:text-indigo-600">About Us</a></li>
+            <li><a href="contact.html" class="text-gray-600 hover:text-indigo-600">Contact</a></li>
+            <li><a href="book.html" class="text-gray-600 hover:text-indigo-600">Plan Your Trip</a></li>
+            <li><a href="faqs.html" class="text-gray-600 hover:text-indigo-600">FAQ</a></li>
+          </nav>
+        </div>
+
+        <!-- Destinations -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-6">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-sm mb-3">Destinations</h2>
+          <nav class="list-none space-y-2">
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Luxury Travel</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Beach Getaways</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Family Vacations</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Adventure Escapes</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Cultural Cities</a></li>
+          </nav>
+        </div>
+
+        <!-- Support -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-6">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-sm mb-3">Support</h2>
+          <nav class="list-none space-y-2">
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Help Center</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Accessibility</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Anti-Discrimination</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Cancellation Options</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">FAQs</a></li>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-sm text-gray-500 text-center sm:text-left">
+          © 2025 Elysium Travel Agency —
+          <a href="#" class="text-gray-600 hover:text-indigo-600 ml-1" target="_blank">@elysium_travel</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start space-x-4">
+          <a href="#" class="text-gray-500 hover:text-indigo-600">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-indigo-600">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 8v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-indigo-600">
+            <svg fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-indigo-600">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+</section>
+
+
+
+      
+
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <nav class="absolute top-0 left-0 w-full z-20">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="text-black text-2xl md:text-3xl font-extrabold tracking-wide">Elysium</a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-8 text-black font-medium text-base text-lg">
+        <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-400 transition">About</a></li>
+        <li><a href="destinations.html" class="hover:text-blue-400 transition">Destinations</a></li>
+        <li><a href="destdet.html" class="hover:text-blue-400 transition">Details</a></li>
+        <li><a href="book.html" class="hover:text-blue-400 transition">Book</a></li>
+        <li><a href="contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+        <li><a href="tips.html" class="hover:text-green-800 transition">Tips</a></li>
+      </ul>
+
+      <!-- Right Controls -->
+      <div class="hidden md:flex items-center gap-4">
+        <span class="text-black text-sm uppercase">ENG | UA</span>
+        <a href="destinations.html" class="bg-white text-black px-4 py-2 rounded-full font-semibold text-lg hover:bg-blue-400 transition">
+          View Tours <span class="ml-1">➜</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-black focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+      <ul class="flex flex-col space-y-4 text-blck text-base">
+        <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="destinations.html" class="hover:text-blue-400 transition">Destinations</a></li>
+        <li><a href="destdet.html" class="hover:text-blue-400 transition">Details</a></li>
+        <li><a href="book.html" class="hover:text-blue-400 transition">Book</a></li>
+        
+        <li>
+          <a href="#" class="inline-block mt-2 bg-white text-black px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-200">
+            View Tours ➜
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+    <section class="text-black body-font" style="background-image: url('conta.jpg'); background-size: cover; background-position: center;">
+  <div class="container px-5 py-24 mx-auto max-w-2xl bg-white/90 rounded-lg shadow-md">
+
+    <!-- Heading -->
+    <div class="text-center mb-10">
+      <h1 class="text-4xl sm:text-5xl font-bold black">PLAN YOUR DREAM TRIP WITH US</h1>
+      <p class="mt-4 text-black text-lg">
+        Discover personalized travel plans, handpicked destinations, and exclusive packages tailored just for you.
+      </p>
+    </div>
+
+    <!-- Form -->
+    <form class="bg-gray-100 p-8 rounded-lg shadow-sm">
+      <!-- Full Name -->
+      <div class="mb-4">
+        <label for="name" class="text-lg text-black">Full Name:</label>
+        <input type="text" id="name" name="name" class="input">
+      </div>
+
+      <!-- Email -->
+      <div class="mb-4">
+        <label for="email" class="text-lg text-black">Email:</label>
+        <input type="email" id="email" name="email" class="input">
+      </div>
+
+      <!-- Phone -->
+      <div class="mb-4">
+        <label for="phone" class="text-lg text-black">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" class="input">
+      </div>
+
+      <!-- Destination -->
+      <div class="mb-4">
+        <label for="destination" class="text-lg text-black">Destination:</label>
+        <select id="destination" name="destination" class="input">
+          <option value="">Select a destination</option>
+          <option value="paris">Paris, France</option>
+          <option value="bali">Bali, Indonesia</option>
+          <option value="tokyo">Tokyo, Japan</option>
+          <option value="nairobi">Nairobi, Kenya</option>
+          <option value="santorini">Santorini, Greece</option>
+        </select>
+      </div>
+
+      <!-- Number of Travellers -->
+      <div class="mb-4">
+        <label for="travellers" class="text-lg text-black">No. of Travellers:</label>
+        <input type="number" id="travellers" name="travellers" min="1" class="input">
+      </div>
+
+      <!-- Travel Dates -->
+      <div class="mb-4">
+        <label for="date" class="text-lg text-black">Travel Dates:</label>
+        <input type="date" id="date" name="date" class="input">
+      </div>
+
+      <!-- Travel Type -->
+      <div class="mb-4">
+        <label for="travelType" class="text-lg text-black">Type of Travel:</label>
+        <select id="travelType" name="travelType" class="input">
+          <option value="">Select type</option>
+          <option value="adventure">Adventure</option>
+          <option value="romantic">Romantic</option>
+          <option value="family">Family</option>
+          <option value="solo">Solo</option>
+          <option value="business">Business</option>
+        </select>
+      </div>
+
+      <!-- Message -->
+      <div class="mb-4">
+        <label for="message" class="text-lg text-black">Additional Message</label>
+        <textarea id="message" name="message" rows="3" class="input resize-none"></textarea>
+      </div>
+
+      <!-- Submit -->
+      <button class="text-white bg-black border-0 py-2 px-6 rounded text-lg hover:bg-indigo-600 focus:outline-none w-full">
+        Submit
+      </button>
+
+      <p class="text-sm text-gray-500 mt-3 text-center">We'll contact you with the best offers shortly.</p>
+    </form>
+  </div>
+</section>
+<br><br>
+
+<section>
+  <footer class="text-gray-700 body-font bg-gray-50">
+    <div class="container px-5 py-20 mx-auto flex md:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <!-- Logo and About -->
+      <div class="w-64 flex-shrink-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-bold items-center md:justify-start justify-center text-gray-900 hover:text-indigo-600 transition-colors">
+          <img width="48" height="48" src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/external-travel-agency-kindness-and-hospitality-inipagistudio-mixed-inipagistudio.png" alt="Travel Icon" />
+          <span class="ml-3 text-2xl">Elysium</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">
+          Explore the world’s hidden treasures—crafted just for you.
+        </p>
+      </div>
+
+      <!-- Links Sections -->
+      <div class="flex-grow flex flex-wrap md:pl-20 mt-10 md:mt-0 text-center md:text-left">
+        <!-- Quick Links -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-6">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-sm mb-3">Quick Links</h2>
+          <nav class="list-none space-y-2">
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Home</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Packages</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">About Us</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Contact</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Plan Your Trip</a></li>
+          </nav>
+        </div>
+
+        <!-- Destinations -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-6">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-sm mb-3">Destinations</h2>
+          <nav class="list-none space-y-2">
+           <li><a href="index.html" class="text-gray-600 hover:text-indigo-600">Home</a></li>
+            <li><a href="destdet.html" class="text-gray-600 hover:text-indigo-600">Packages</a></li>
+            <li><a href="about.html" class="text-gray-600 hover:text-indigo-600">About Us</a></li>
+            <li><a href="contact.html" class="text-gray-600 hover:text-indigo-600">Contact</a></li>
+            <li><a href="book.html" class="text-gray-600 hover:text-indigo-600">Plan Your Trip</a></li>
+            <li><a href="faqs.html" class="text-gray-600 hover:text-indigo-600">FAQ</a></li>
+          </nav>
+        </div>
+
+        <!-- Support -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-6">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-sm mb-3">Support</h2>
+          <nav class="list-none space-y-2">
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Help Center</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Accessibility</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Anti-Discrimination</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Cancellation Options</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">FAQs</a></li>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-sm text-gray-500 text-center sm:text-left">
+          © 2025 Elysium Travel Agency —
+          <a href="#" class="text-gray-600 hover:text-indigo-600 ml-1" target="_blank">@elysium_travel</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start space-x-4">
+          <a href="#" class="text-gray-500 hover:text-indigo-600">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-indigo-600">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 8v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-indigo-600">
+            <svg fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-indigo-600">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+</section>
+
+
+    
+</body>
+</html>

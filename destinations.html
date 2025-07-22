@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Destinations</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+     
+  <nav class="absolute top-0 left-0 w-full z-20">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="text-black text-2xl md:text-3xl font-extrabold tracking-wide">Elysium</a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-8 text-black font-medium text-base text-lg">
+        <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-400 transition">About</a></li>
+        <li><a href="destinations.html" class="hover:text-blue-400 transition">Destinations</a></li>
+        <li><a href="destdet.html" class="hover:text-blue-400 transition">Details</a></li>
+        <li><a href="book.html" class="hover:text-blue-400 transition">Book</a></li>
+        <li><a href="contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+        <li><a href="tips.html" class="hover:text-green-800 transition">Tips</a></li>
+      </ul>
+
+      <!-- Right Controls -->
+      <div class="hidden md:flex items-center gap-4">
+        <span class="text-black text-sm uppercase">ENG | UA</span>
+        <a href="destinations.html" class="bg-white text-black px-4 py-2 rounded-full font-semibold text-lg hover:bg-gray-200 transition">
+          View Tours <span class="ml-1">➜</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-black focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+      <ul class="flex flex-col space-y-4 text-blck text-base">
+        <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="destinations.html" class="hover:text-blue-400 transition">Destinations</a></li>
+        <li><a href="destdet.html" class="hover:text-blue-400 transition">Details</a></li>
+        <li><a href="book.html" class="hover:text-blue-400 transition">Book</a></li>
+        
+        <li>
+          <a href="#" class="inline-block mt-2 bg-white text-black px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-200">
+            View Tours ➜
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <section class="bg-white text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+
+    <!-- Header -->
+    <section class="relative text-gray-800 min-h-[20vh] flex items-center justify-center">
+      <div class="text-center relative">
+        <h1 class="text-[8rem] font-bold text-gray-300 opacity-50 absolute inset-0 flex items-center justify-center pointer-events-none select-none leading-none">
+          DESTINATIONS
+        </h1>
+        <h3 class="text-3xl font-semibold relative z-10">Featured Destinations</h3>
+      </div>
+    </section>
+
+    <!-- Description -->
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <p class="text-base md:text-lg">
+        Handpicked travel experiences to the most iconic, breathtaking and exciting locations.
+        Choose your next adventure and start making memories today.
+      </p>
+    </div>
+
+    <!-- Filters and Search -->
+    <div class="flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
+      <div class="flex gap-2 flex-wrap">
+        <select class="px-4 py-2 border rounded-md text-sm">
+          <option>Filter by Region</option>
+          <option>Europe</option>
+          <option>Asia</option>
+          <option>North America</option>
+          <option>Africa</option>
+          <option>Oceania</option>
+        </select>
+
+        <select class="px-4 py-2 border rounded-md text-sm">
+          <option>Filter by Budget</option>
+          <option>Low Budget</option>
+          <option>Mid Range</option>
+          <option>Luxury</option>
+        </select>
+      </div>
+
+      <div class="relative w-full md:w-1/3">
+        <input 
+          type="text" 
+          placeholder="Search destinations..."
+          class="w-full px-4 py-2 border rounded-md text-sm focus:ring-2 focus:ring-black"
+        />
+        <span class="absolute right-3 top-2.5 text-gray-400">
+          🔍
+        </span>
+      </div>
+    </div>
+
+    <!-- Destination Cards -->
+    <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-h-[600px] overflow-y-auto pr-2">
+      
+      <div class="bg-gray-100 p-6 rounded-lg">
+        <img class="h-40 rounded w-full object-cover mb-6" src="paris.jpg" alt="Paris">
+        <h2 class="text-lg font-medium text-gray-900 mb-2">Paris, France</h2>
+        <p class="text-base mb-2">Lose yourself in the charm of Paris, from iconic landmarks to world-class art and cuisine.</p>
+        <button class="text-sm text-white bg-black px-4 py-2 rounded hover:bg-green-600">View Details</button>
+      </div>
+
+      
+      <div class="bg-gray-100 p-6 rounded-lg">
+        <img class="h-40 rounded w-full object-cover mb-6" src="newyork.jpg" alt="New York City">
+        <h2 class="text-lg font-medium text-gray-900 mb-2">New York City, USA</h2>
+        <p class="text-base mb-2">Experience the excitement, culture and nightlife of the iconic Big Apple.</p>
+        <button class="text-sm text-white bg-black px-4 py-2 rounded hover:bg-green-600">View Details</button>
+      </div>
+
+      <div class="bg-gray-100 p-6 rounded-lg">
+        <img class="h-40 rounded w-full object-cover mb-6" src="tokyo.jpg" alt="Tokyo, Japan">
+        <h2 class="text-lg font-medium text-gray-900 mb-2">Tokyo, Japan</h2>
+        <p class="text-base mb-2">Experience the perfect blend of modern skyscrapers and ancient traditions in Tokyo.</p>
+        <button class="text-sm text-white bg-black px-4 py-2 rounded hover:bg-green-600">View Details</button>
+      </div>
+
+      <div class="bg-gray-100 p-6 rounded-lg">
+        <img class="h-40 rounded w-full object-cover mb-6" src="swiss.jpg" alt="Alps, Swiss">
+        <h2 class="text-lg font-medium text-gray-900 mb-2">Alps, Switzerland</h2>
+        <p class="text-base mb-2">Explore the snow-covered peaks and charming villages of the Alps, perfect for nature lovers.</p>
+        <button class="text-sm text-white bg-black px-4 py-2 rounded hover:bg-green-600">View Details</button>
+      </div>
+
+      <div class="bg-gray-100 p-6 rounded-lg">
+        <img class="h-40 rounded w-full object-cover mb-6" src="bali2.jpg" alt="Bali">
+        <h2 class="text-lg font-medium text-gray-900 mb-2">Bali, Indonesia</h2>
+        <p class="text-base mb-2">Relax and rejunevate on Bali's stunning beaches and explore its vibrant culture.</p>
+        <button class="text-sm text-white bg-black px-4 py-2 rounded hover:bg-green-600">View Details</button>
+      </div>
+
+      <div class="bg-gray-100 p-6 rounded-lg">
+        <img class="h-40 rounded w-full object-cover mb-6" src="finla.jpg" alt="Finland">
+        <h2 class="text-lg font-medium text-gray-900 mb-2">Lapland, Finland</h2>
+        <p class="text-base mb-2">Escape to the snowy landscapes of Lapland for the chance to see the Nothern Lights.</p>
+        <button class="text-sm text-white bg-black px-4 py-2 rounded hover:bg-green-600">View Details</button>
+      </div>
+
+    </div>
+
+    <!-- Scroll Button -->
+    <div class="text-center mt-10">
+      <button class="bg-black text-white px-6 py-3 rounded-full hover:bg-green-600 transition duration-300">
+        Scroll More Destinations ↓
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <footer class="text-gray-700 body-font bg-gray-50">
+    <div class="container px-5 py-20 mx-auto flex md:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <!-- Logo and About -->
+      <div class="w-64 flex-shrink-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-bold items-center md:justify-start justify-center text-gray-900 hover:text-indigo-600 transition-colors">
+          <img width="48" height="48" src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/external-travel-agency-kindness-and-hospitality-inipagistudio-mixed-inipagistudio.png" alt="Travel Icon" />
+          <span class="ml-3 text-2xl">Elysium</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">
+          Explore the world’s hidden treasures—crafted just for you.
+        </p>
+      </div>
+
+      <!-- Links Sections -->
+      <div class="flex-grow flex flex-wrap md:pl-20 mt-10 md:mt-0 text-center md:text-left">
+        <!-- Quick Links -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-6">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-sm mb-3">Quick Links</h2>
+          <nav class="list-none space-y-2">
+            <li><a href="index.html" class="text-gray-600 hover:text-indigo-600">Home</a></li>
+            <li><a href="destdet.html" class="text-gray-600 hover:text-indigo-600">Packages</a></li>
+            <li><a href="about.html" class="text-gray-600 hover:text-indigo-600">About Us</a></li>
+            <li><a href="contact.html" class="text-gray-600 hover:text-indigo-600">Contact</a></li>
+            <li><a href="book.html" class="text-gray-600 hover:text-indigo-600">Plan Your Trip</a></li>
+            <li><a href="faqs.html" class="text-gray-600 hover:text-indigo-600">FAQ</a></li>
+          </nav>
+        </div>
+
+        <!-- Destinations -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-6">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-sm mb-3">Destinations</h2>
+          <nav class="list-none space-y-2">
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Luxury Travel</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Beach Getaways</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Family Vacations</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Adventure Escapes</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Cultural Cities</a></li>
+          </nav>
+        </div>
+
+        <!-- Support -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-6">
+          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-sm mb-3">Support</h2>
+          <nav class="list-none space-y-2">
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Help Center</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Accessibility</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Anti-Discrimination</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Cancellation Options</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">FAQs</a></li>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-sm text-gray-500 text-center sm:text-left">
+          © 2025 Elysium Travel Agency —
+          <a href="#" class="text-gray-600 hover:text-indigo-600 ml-1" target="_blank">@elysium_travel</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start space-x-4">
+          <a href="#" class="text-gray-500 hover:text-indigo-600">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-indigo-600">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 8v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-indigo-600">
+            <svg fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-500 hover:text-indigo-600">
+            <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     
+</body>
+</html>
